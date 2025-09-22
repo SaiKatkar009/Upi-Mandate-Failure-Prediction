@@ -1,59 +1,83 @@
-#  UPI Mandate Failure Prediction — Fintech ML Project
+UPI Mandate Failure Prediction — FinTech ML Project
 
-This project is a complete end-to-end machine learning pipeline that predicts whether a UPI mandate (auto-debit transaction) will fail or succeed. I built this to simulate how fintech platforms like Razorpay deal with recurring payments — using realistic (but synthetic) transaction data and actual production-level tools.
+This project is a complete end-to-end machine learning pipeline that predicts whether a UPI mandate (auto-debit transaction) will fail or succeed.
+It is designed to simulate how fintech platforms like Razorpay handle recurring payments — using synthetic but realistic data and production-ready tools.
 
-It includes:
-- ML models (Logistic Regression, XGBoost, Random Forest)
-- A working Flask API
-- A Streamlit-based user interface
-- A Gemini-powered chatbot that answers dataset-specific queries (like “why did transaction 30201 fail?”)
+🔹 Features
 
-The idea was to go beyond just a notebook — and create something that feels closer to a real product.
+ML Models: Logistic Regression, Random Forest, XGBoost
 
----
+Flask API: Serves ML predictions via REST endpoint
 
-##  What’s in it
+Streamlit UI: Interactive frontend for testing transactions
 
-- **Machine Learning:** Trained and evaluated three models to predict failures
-- **Flask API:** Used to serve predictions via an endpoint
-- **Streamlit UI:** A simple frontend where anyone can test a transaction
-- **Gemini Chatbot (RAG):** I’ve integrated Google’s Gemini to answer questions based on the dataset itself — it acts like a virtual assistant for the project
+Gemini-powered Chatbot: Answers dataset-specific queries (e.g., “Why did transaction 30201 fail?”)
 
----
+Real-world Simulation: Mimics UPI recurring payment workflows
 
-##  Why This Project?
+🔹 Why This Project?
 
-While working on projects earlier, I realized most stop at EDA and a `.predict()`. I wanted to explore:
+Most projects stop at .predict() inside a notebook.
+This project goes further by:
 
-- What an ML product *could* look like
-- How APIs and chat interfaces are now a major part of modern data apps
-- How a recruiter or engineer would evaluate real-world readiness
+Deploying ML models as an API and frontend app
 
----
+Integrating chatbot support for explainability
 
-##  Tech Used
+Simulating a real-world fintech scenario
 
-- Python (pandas, scikit-learn, xgboost)
-- Flask
-- Streamlit
-- Google Gemini API (`google-generativeai`)
-- Faker (to simulate data)
-- matplotlib & seaborn (for basic EDA)
+Demonstrating end-to-end product readiness for recruiters and engineers
 
----
+🔹 Tech Stack
 
-##  Running it Locally
+Languages: Python
 
-```bash
-# clone the repo
-git clone https://github.com/Flic-X/UPI-Mandate-Failure-Prediction.git
-cd UPI-Mandate-Failure-Prediction
+Libraries: pandas, scikit-learn, xgboost, matplotlib, seaborn, Faker
 
-# install the required packages
+Frameworks: Flask, Streamlit
+
+AI Integration: Google Gemini API (via google-generativeai)
+
+🔹 Project Structure
+UPI-Mandate-Failure-Prediction/
+│── app.py                # Flask API
+│── streamlit_app.py       # Streamlit frontend
+│── requirements.txt       # Dependencies
+│── data/                  # Synthetic dataset
+│── models/                # Trained ML models
+│── notebooks/             # EDA and model training notebooks
+│── README.md              # Documentation
+
+🔹 Running Locally
+1️⃣ Clone the Repository
+git clone https://github.com/SaiKatkar009/Upi-Mandate-Failure-Prediction.git
+cd Upi-Mandate-Failure-Prediction
+
+2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-# start the API
+3️⃣ Start the Flask API
 python app.py
 
-# run the Streamlit app
+4️⃣ Launch the Streamlit App
 streamlit run streamlit_app.py
+
+🔹 Future Enhancements
+
+Add real-world transaction datasets
+
+Containerize with Docker
+
+Extend to credit card/loan mandate failure prediction
+
+Deploy on cloud (AWS/GCP/Azure)
+
+👤 Author
+
+Sai Katkar
+
+📧 saikatkar009@gmail.com
+
+🔗 LinkedIn
+
+🖥️ GitHub
