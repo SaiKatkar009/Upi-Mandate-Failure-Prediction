@@ -26,6 +26,18 @@ While working on projects earlier, I realized most stop at EDA and a .predict().
 - Google Gemini API 
 - Faker (to simulate data)
 - matplotlib & seaborn (for basic EDA)
+# Project Structure
+```bash
+UPI-Mandate-Failure-Prediction/
+│── app.py                # Flask API
+│── streamlit_app.py       # Streamlit frontend
+│── requirements.txt       # Dependencies
+│── data/                  # Synthetic dataset
+│── models/                # Trained ML models
+│── notebooks/             # EDA & model training notebooks
+│── README.md              # Documentation
+```
+
 # Running it Locally
 ```bash
 # clone the repo
